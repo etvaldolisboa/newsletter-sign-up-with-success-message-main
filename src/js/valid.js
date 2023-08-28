@@ -7,11 +7,19 @@ function validForm(email) {
 }
 
 const form = document.querySelector("form");
-form.addEventListener("submit", function(e) {
-  const email = document.getElementById('email').value;
-  if (!validForm(email)) {
+form.addEventListener("submit", function (e) {
     e.preventDefault();
-    document.querySelector(".form").classList.add("erro");
-  }
-});
 
+    const email = document.getElementById('email').value;
+    const newsletter = document.querySelector('.container-newsletter')
+    const action = document.querySelector('.container-action');
+    const user = document.querySelector('.user-email');
+
+    if (!validForm(email)) {
+        document.querySelector(".form").classList.add("erro");
+    } else {
+        newsletter.classList.add('hidden');
+        action.classList.remove('hidden');
+        user.innerText = `${email}`;
+    }
+});

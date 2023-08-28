@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <section class="container-newsletter">
     <div class="left">
       <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -25,13 +25,13 @@
         <li> And much more!</li>
       </ul>
 
-      <form action="./action/action.html" class="form" method="get">
+      <form class="form" action="./index.html" method="get">
         <div class="control">
           <small>Email address</small>
           <small class="valid">Valid email required</small>
         </div>
         <input class="text-email" type="email" id="email" name="email" placeholder="email@company.com" />
-        <input class="btn" type="submit"  value="Subscribe to monthly newsletter"/>
+        <input class="btn" type="submit" value="Subscribe to monthly newsletter" />
       </form>
     </div>
 
@@ -40,10 +40,19 @@
         alt="Imagem padrão">
       <img src="./src/assets/images/illustration-sign-up-desktop.svg" alt="Imagem padrão">
     </picture>
-  </div>
+  </section>
 
+  <!-- THANKS -->
+  <section class="container-action hidden">
+    <img src="../src/assets/images/icon-list.svg" alt="icon check">
+    <h1>Thanks for subscribing!</h1>
+    <p class="msg">
+      A confirmation email has been sent to <span class="user-email"></span>. Please open it and click the button inside
+      to confirm your subscription. </p>
+    <button type="button" id="btn-action" class="btn"> Dismiss message </button>
+  </section>
 
-  <script src="src/js/valid.js"></script>
+  <script type="module" src="src/js/valid.js"></script>
 </body>
 
 </html>
