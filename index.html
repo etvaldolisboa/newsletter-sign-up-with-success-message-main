@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/globais.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul>
+        <li> Product discovery and building what matters</li>
+        <li> Measuring to ensure updates are a success</li>
+        <li> And much more!</li>
+      </ul>
+
+      <form action="/action/action.html" class="form" method="get">
+        <div class="control">
+          <small>Email address</small>
+          <small class="valid">Valid email required</small>
+        </div>
+        <input class="text-email" type="email" id="email" name="email" placeholder="email@company.com" />
+        <input class="btn" type="submit"  value="Subscribe to monthly newsletter"/>
+      </form>
+    </div>
+
+    <picture>
+      <source srcset="./src/assets/images/illustration-sign-up-mobile.svg" media="(max-width:768px)"
+        alt="Imagem padrão">
+      <img src="./src/assets/images/illustration-sign-up-desktop.svg" alt="Imagem padrão">
+    </picture>
+  </div>
+
+
+  <script src="src/js/valid.js"></script>
+</body>
+
+</html>

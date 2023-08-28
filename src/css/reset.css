@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+a{
+    text-align: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+:root {
+    --bg-dark: hsl(234, 29%, 20%);
+    --bg-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --primary: #ff6257;
+    --primary-opacity: hsla(4, 100%, 67%, 0.2);
+}
+
+:root{
+    --font-bold: "Roboto Bold";
+    --font-regular: "Roboto Regular";
+}
+

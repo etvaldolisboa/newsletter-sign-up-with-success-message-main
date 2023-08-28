@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg-grey);
+}
+
+.container-action {
+    background-color: var(--white);
+    width: 504px;
+    padding: 48px 64px 64px 64px;
+    border-radius: 36px;
+}
+
+.container-action img {
+    width: 64px;
+    margin-bottom: 31px;
+}
+
+.container-action h1 {
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 56px;
+    margin-bottom: 26px;
+}
+
+.container-action p {
+    font-family: var(--font-regular);
+    font-size: 16px;
+    margin-bottom: 45px;
+    line-height: 21px;
+}
+
+.container-action #btn-action {
+    padding: 20px;
+}
