@@ -17,7 +17,6 @@ body {
     border-radius: 3.6rem;
     display: flex;
     transition: all ease-in-out 1s;
-
 }
 
 .container-newsletter .left {
@@ -26,6 +25,7 @@ body {
 
 .container-newsletter .left h1 {
     font-size: 5.5rem;
+    font-size: min(5.5rem, 8vw);
     font-weight: 700;
     margin: 27px 0 20px;
     font-family: var(--font-bold);
@@ -37,7 +37,7 @@ body {
 }
 
 .container-newsletter .left ul {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .container-newsletter .left ul li {
@@ -78,7 +78,7 @@ body {
 }
 
 .container-newsletter .left .form .text-email {
-    border: 1px solid var(--bg-dark);
+    border: 1px solid var(--grey);
     width: 100%;
     padding: 17.5px 24px;
     border-radius: 9px;
@@ -99,13 +99,14 @@ body {
 
 .container-newsletter .left .form input {
     cursor: pointer;
-    padding: 18.5px 0px;
+    padding: 18.5px 24px;
 }
 
 .container-newsletter .left p,
 .container-newsletter .left ul li,
 .container-newsletter .left .form input {
     font-size: 1.6rem;
+    font-size: min(1.6rem, 5.5vw);
     font-weight: 400;
     font-family: var(--font-regular);
 }
@@ -121,8 +122,13 @@ img {
     border-radius: 17px;
 }
 
+@media (max-width:1024px) {
+.container-newsletter .left {
+    padding: 40px;
+}
+}
 @media (max-width:768px) {
-    .container {
+    .container-newsletter {
         flex-direction: column;
     }
 
@@ -147,7 +153,7 @@ img {
     width: 504px;
     padding: 48px 64px 64px 64px;
     border-radius: 36px;
-    /* transition: ease-in-out 1s; */
+    transition: ease-in-out 1s;
 }
 .container-action img {
     width: 64px;
@@ -175,7 +181,6 @@ font-weight: bold;
 .container-action #btn-action {
     padding: 20px;
 }
-
 
 /* HIDDEN */
 .hidden{
